@@ -1,0 +1,266 @@
+@import url("icons-ucal.css");
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url("../fonts/HelveticaNeue/HelveticaNeueLight.otf");
+}
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  font-family: 'HelveticaNeueLight';
+  color: #2e2e33;
+}
+.header-movil .nav-movil ul li:nth-of-type(2) a,
+.header-movil .nav-movil ul li:nth-of-type(2) span {
+  color: #0fb49f;
+}
+.situation-image {
+  background-image: url("../img/situacion.png");
+}
+.solution-image {
+  background-image: url("../img/tres.jpg");
+}
+.projects-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 0;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.projects-container .profile {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  background-color: #f6f9fc;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+}
+.projects-container .profile .date-person,
+.projects-container .profile .description,
+.projects-container .profile .social-networks {
+  width: 100%;
+  height: auto;
+}
+.projects-container .profile .date-person {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects-container .profile .date-person .image-profile {
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/foto-perfil.png");
+  background-size: cover;
+  background-position: center;
+}
+.projects-container .profile .date-person .right {
+  width: 60%;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.projects-container .profile .date-person .right p {
+  text-align: left;
+  font-size: 1.3rem;
+}
+.projects-container .profile .date-person .right p:nth-of-type(1) {
+  font-size: 1.7rem;
+  font-family: 'HelveticaNeueBold';
+  font-weight: bolder;
+}
+.projects-container .profile .date-person .right p:nth-of-type(2) {
+  color: #ff45e0;
+  margin: 5px 0;
+}
+.projects-container .profile .date-person .right p:nth-of-type(3),
+.projects-container .profile .date-person .right p:nth-of-type(4) {
+  color: #aeaeae;
+}
+.projects-container .profile .description {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.projects-container .profile .description span {
+  font-size: 3rem;
+}
+.projects-container .profile .description span:nth-of-type(1) {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.projects-container .profile .description p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.projects-container .profile .social-networks {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.projects-container .profile .social-networks span {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #787878;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.projects-container .project-description {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+.projects-container .project-description .title {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.projects-container .project-description .title p:nth-of-type(1) {
+  font-family: 'HelveticaNeueBold';
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.projects-container .project-description .title p:nth-of-type(2) {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.projects-container .project-description .feature {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+.projects-container .project-description .feature .image-feature {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.projects-container .project-description .feature p:nth-of-type(1) {
+  color: #0fb49f;
+  font-family: 'HelveticaNeueBold';
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.projects-container .project-description .feature p:nth-of-type(2) {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 600px) {
+  .projects-container .profile {
+    padding: 40px;
+  }
+  .projects-container .profile .date-person .image-profile {
+    width: 120px;
+    height: 120px;
+  }
+  .projects-container .profile .date-person .right {
+    width: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .header-desktop .right .nav-desktop ul li:nth-of-type(2) a {
+    font-family: 'HelveticaNeueBold';
+    color: #0fb49f;
+    border-bottom: 3px solid #0fb49f;
+  }
+  .projects-container {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects-container .profile .date-person {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .projects-container .profile .date-person .image-profile {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  .projects-container .profile .date-person .right {
+    margin: 0;
+  }
+  .projects-container .project-description {
+    margin-left: 50px;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+  .projects-container .project-description .feature .image-feature {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .projects-container .profile {
+    width: 35%;
+  }
+  .projects-container .project-description {
+    width: calc(65% - 50px);
+  }
+}
+@media screen and (min-width: 1180px) {
+  .projects-container .profile {
+    width: 25%;
+  }
+  .projects-container .project-description {
+    width: calc(75% - 50px);
+  }
+}

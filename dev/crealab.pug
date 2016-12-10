@@ -1,0 +1,44 @@
+doctype html
+html
+	head 
+		meta(charset='utf-8')
+		title Crealab
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/css/crealab.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+	body 
+		include ./blocks/header.pug
+		section.crealab-container
+			.us-container
+				.us-content
+					video(src='./client/video/video.mp4', controls)
+					.image-crealab
+					.description
+						p CreaLab nace de la necesidad de que los alumnos experimenten desde los primeros ciclos el trabajo real, el trabajo de campo y también que conozcan cuál es el proceso para ejecutar un proyecto profesional.
+			.allied-companies
+				p Empresas aliadas
+				.business-listing
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+					.col.col-s6.col-m4.col-l2
+						.company-image
+		include ./blocks/footer.pug
+
+		script(src='./client/js/header.js')

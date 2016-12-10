@@ -1,0 +1,112 @@
+white = #fff
+lead = #c7c7c7
+black = #2e2e33
+
+.footer-desktop
+	display none
+.footer-movil
+	width 100%
+	height auto
+	position relative
+	left 0
+	top 0
+	.footer-up
+		display -webkit-flex
+		display flex 
+		flex-flow row nowrap
+		justify-content center
+		align-items center
+		width 100%
+		height auto
+		background-color white
+		padding 20px
+		border-top 1px solid black
+		.left, .right
+			width 50%
+		.left
+			display -webkit-flex
+			display flex
+			flex-flow column wrap 
+			justify-content center
+			align-items flex-start
+			p 
+				font-size 1.1rem
+				color black
+		.right
+			display -webkit-flex
+			display flex 
+			flex-flow row nowrap
+			justify-content flex-end
+			align-items center
+			span
+				color lead
+				font-size 2rem
+				margin-left 10px
+	.footer-down
+		display -webkit-flex
+		display flex 
+		flex-flow row wrap
+		justify-content center
+		align-items center
+		width 100%
+		height auto
+		background-color black
+		padding 20px
+		p 
+			color white
+			text-align center
+			font-size 1rem
+			
+@media screen and (min-width: 600px)
+	.footer-movil
+		.footer-up
+			.right
+				span 
+					margin-left 20px
+@media screen and (min-width: 640px)
+	.footer-movil
+		.footer-up
+			.right
+				span 
+					margin-left 40px 
+@media screen and (min-width: 900px)
+	.footer-movil
+		display none
+	.footer-desktop
+		display -webkit-flex
+		display flex
+		flex-flow row nowrap
+		justify-content space-between
+		align-items center
+		width 100%
+		height auto
+		background-color black
+		padding 20px 40px
+		.left, .right, .center
+			p 
+				font-size 1.05rem
+				color white
+		.left, .center
+			display -webkit-flex
+			display flex 
+			flex-flow column wrap
+			justify-content center
+		.left 
+			width 20%
+			align-items flex-start
+		.center
+			width 60%
+			align-items center
+		.right
+			width 20%
+			display -webkit-flex
+			display flex 
+			flex-flow row nowrap
+			justify-content flex-end
+			align-items center
+			span 
+				font-size 2rem
+				color white
+				margin-left 40px
+
+		

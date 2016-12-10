@@ -1,0 +1,52 @@
+doctype html
+html(lang='es')
+	head 
+		meta(charset='utf-8')
+		title Proyectos
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/css/projects.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+	body
+		include ./blocks/header.pug
+		section.projects-container
+			.profile
+				.date-person
+					.image-profile
+					.right
+						p Maria Alejandra
+						p Arquitectura de interiores
+						p Pregrado
+						p m.gonz@gmail.com
+				.description
+					span.icon-format_quote
+					p 
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					span.icon-format_quote
+				.social-networks
+					span.icon-facebook
+					span.icon-linkedin
+					span.icon-behance
+			.project-description
+				.title
+					p Propuesta rediseño Rouge Bar - Miraflores
+					p Proyectos V | Ciclo 2016-1
+				.feature
+					.image-feature.situation-image
+					p Situación
+					p 
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				.feature
+					.image-feature.solution-image
+					p Solución
+					p 
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		include ./blocks/footer.pug
+
+		script(src='./client/js/header.js')

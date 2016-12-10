@@ -1,0 +1,125 @@
+.footer-desktop {
+  display: none;
+}
+.footer-movil {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.footer-movil .footer-up {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-top: 1px solid #2e2e33;
+}
+.footer-movil .footer-up .left,
+.footer-movil .footer-up .right {
+  width: 50%;
+}
+.footer-movil .footer-up .left {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-movil .footer-up .left p {
+  font-size: 1.1rem;
+  color: #2e2e33;
+}
+.footer-movil .footer-up .right {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer-movil .footer-up .right span {
+  color: #c7c7c7;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+.footer-movil .footer-down {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #2e2e33;
+  padding: 20px;
+}
+.footer-movil .footer-down p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .footer-movil .footer-up .right span {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .footer-movil .footer-up .right span {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer-movil {
+    display: none;
+  }
+  .footer-desktop {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #2e2e33;
+    padding: 20px 40px;
+  }
+  .footer-desktop .left p,
+  .footer-desktop .right p,
+  .footer-desktop .center p {
+    font-size: 1.05rem;
+    color: #fff;
+  }
+  .footer-desktop .left,
+  .footer-desktop .center {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .footer-desktop .left {
+    width: 20%;
+    align-items: flex-start;
+  }
+  .footer-desktop .center {
+    width: 60%;
+    align-items: center;
+  }
+  .footer-desktop .right {
+    width: 20%;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-desktop .right span {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 40px;
+  }
+}
